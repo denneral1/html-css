@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+   
+    <video width="560" poster="imagens/foto-p.png" controls loop>
+        <source src="midia/AnyConv.com__Pexels-Jill-Burrow-8927748.3g2" type="video/ogg">
+        <source src="midia/Pexels-Jill-Burrow-8927748.webm" type="midia/webm">
+        <source src="midia/Pexels-Jill-Burrow-8927748.m4v" type="midia/m4v">
+        <source src="midia/Pexels-Jill-Burrow-8927748.mp4" type="midia/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        <!--Com essa adaptação de comandos video e source, consigo colocar pra rodar varios tipos de arquivos de vídeo, o navegador vai rodar em ordem o primeiro que for compativel. Ideal escolher ordem de arquivos do mais leve-->
+        <!--Esse modelo de hospedagem de video no proprio site pode ficar extremamente pesado dependendo do tráfego no site e tamanho dos videos.-->
+    </video>
+
+    <h1>Inserindo vídeos do Youtube ou outras plataformas como vimeo</h1>
+    <!-- Ir no video do youtube, compartilhar, incorporar e copiar o código-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LDFMOLENxtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
